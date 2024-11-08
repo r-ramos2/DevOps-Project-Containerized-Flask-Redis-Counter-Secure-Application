@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting Web App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Voting Web App</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Vote</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header class="hero">
+        <h1>Welcome to the Voting Web App</h1>
+        <p>Cast your vote and make a difference!</p>
+    </header>
+    <section class="about">
+        <h2>About Us</h2>
+        <p>Our mission is to provide a transparent and efficient voting platform for all users. We believe in the power of technology to bring about positive change.</p>
+    </section>
+    <section class="vote">
+        <h2>Cast Your Vote</h2>
+        <form action="/vote" method="post">
+            <button type="submit">Vote Now</button>
+        </form>
+    </section>
+    <footer class="footer">
+        <p>&copy; 2024 Voting Web App. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+

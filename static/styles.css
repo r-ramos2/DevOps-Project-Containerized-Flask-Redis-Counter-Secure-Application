@@ -1,0 +1,192 @@
+/* General Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #004d40; /* Dark teal */
+    color: #fff;
+    padding: 0.75rem 1.5rem; /* Adjusted padding */
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 1.5rem; /* Adjusted font size */
+    font-weight: 700;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 0.75rem; /* Adjusted margin */
+}
+
+.nav-links a {
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #80cbc4; /* Light teal */
+}
+
+/* Hero Section Styles */
+.hero {
+    background: #004d40; /* Dark teal */
+    color: #fff;
+    text-align: center;
+    padding: 4rem 1.5rem; /* Increased padding for better spacing */
+    position: relative;
+    background-size: cover;
+}
+
+.hero h1 {
+    font-size: 2rem; /* Adjusted font size */
+    margin-bottom: 0.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem; /* Adjusted font size */
+    margin-bottom: 1rem;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 0.75rem 1.5rem; /* Increased padding */
+    font-size: 1rem; /* Increased font size */
+    color: #fff;
+    background-color: #00796b; /* Teal */
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #004d40; /* Darker teal */
+    transform: translateY(-1px);
+}
+
+.btn-primary:focus {
+    outline: none;
+}
+
+/* About Section Styles */
+.about, .vote {
+    padding: 2rem 1.5rem; /* Adjusted padding */
+    text-align: center;
+}
+
+.about h2, .vote h2 {
+    font-size: 1.8rem; /* Adjusted font size */
+    margin-bottom: 0.75rem;
+}
+
+.about p {
+    font-size: 1.1rem;
+    max-width: 600px; /* Reduced max-width */
+    margin: 0 auto;
+}
+
+/* Vote Section Styles */
+.vote form {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem; /* Adjusted margin */
+}
+
+.vote button {
+    padding: 0.75rem 1.5rem; /* Increased padding */
+    font-size: 1rem; /* Increased font size */
+    color: #fff;
+    background-color: #388e3c; /* Green */
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.vote button:hover {
+    background-color: #004d40; /* Darker teal */
+    transform: translateY(-1px);
+}
+
+.vote button:focus {
+    outline: none;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #004d40; /* Dark teal */
+    color: #fff;
+    text-align: center;
+    padding: 1rem 1.5rem; /* Adjusted padding */
+    position: relative;
+    width: 100%;
+    margin-top: auto;
+    box-sizing: border-box;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        margin-top: 1rem;
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        margin: 0.5rem 0;
+    }
+    
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
+
